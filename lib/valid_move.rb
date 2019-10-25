@@ -4,7 +4,7 @@
 def valid_move?(array, index)
   if position_taken?(array, index) == false
     return true
-  else position_taken?(array, index) == true || valid_move?(array, index).between?(0, 8)
+  else position_taken?(array, index) == true || [array, index].between?(0, 8)
     return false
   end
 end
