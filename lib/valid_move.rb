@@ -5,7 +5,7 @@ def valid_move?(array, index)
   # valid_num = index.between?(0, 8)
   if position_taken?(array, index) == false
     return true
-  else
+  else valid_move?(board, index) == true
     false
   end
 end
