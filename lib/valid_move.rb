@@ -2,12 +2,13 @@
 # return true if the index value is equal to an array 1-9
 # use position_taken method to check a space is not already filled
 def valid_move?(array, index)
-  valid_num = index.between?(0, 8)
+  # valid_num = index.between?(0, 8)
   if position_taken?(array, index) == false
     return true
   elsif position_taken?(array, index) == true
     return false
-  else valid_num
+  else array[index] != index.between(0, 8)
+    return false
   end
 end
 
