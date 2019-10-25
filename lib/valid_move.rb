@@ -3,8 +3,8 @@
 # use position_taken method to check a space is not already filled
 def valid_move?(array, index)
   # valid_num = index.between?(0, 8)
-  # if position_taken?(array, index) == false
-  #   return true
+  if position_taken?(array, index) == false
+    return true
   else
     false
   end
