@@ -5,10 +5,8 @@ def valid_move?(array, index)
   # valid_num = index.between?(0, 8)
   if position_taken?(array, index) == false
     return true
-  elsif position_taken?(array, index) == true
-    return false
-  else array[index] != index.between(0, 8)
-    return false
+  else index.between?(0,8) && !position_taken?(array, index)
+    return true
   end
 end
 
