@@ -7,7 +7,7 @@ def valid_move?(array, index)
     return true
   # elsif position_taken?(array, index) == true
   #   return false
-  # else valid_num  
+  # else valid_num
   end
 end
 
@@ -32,6 +32,3 @@ end
 #     return false
 #   end
 # end
-
-
-
