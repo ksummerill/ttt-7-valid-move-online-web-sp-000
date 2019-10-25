@@ -5,8 +5,9 @@ def valid_move?(array, index)
   valid_num = index.between?(0, 8)
   if position_taken?(array, index) == false
     return true
-  else position_taken?(array, index) == true || valid_num
+  elsif position_taken?(array, index) == true
     return false
+  else valid_num  
   end
 end
 
